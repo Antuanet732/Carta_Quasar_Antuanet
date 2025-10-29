@@ -8,8 +8,9 @@
 <script setup>
 import { defineProps } from 'vue';
 
-// Este componente recibirá el saludo y el nombre de la firma
-const props = defineProps({
+// CORRECCIÓN: Eliminamos 'const props ='
+// El template accede a 'saludo' y 'nombreFirma' directamente.
+defineProps({
   saludo: String,
   nombreFirma: String
 });

@@ -18,8 +18,9 @@
 <script setup>
 import { defineProps } from 'vue';
 
-// Este componente recibe 4 datos (props) desde el padre (IndexPage.vue)
-const props = defineProps({
+// CORRECCIÓN: Quitamos 'const props =' ya que no se usa en este bloque
+// El template puede acceder a 'nombre', 'titulo', etc., directamente.
+defineProps({
   nombre: String,
   titulo: String,
   email: String,

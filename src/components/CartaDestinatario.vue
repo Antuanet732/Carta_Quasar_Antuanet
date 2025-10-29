@@ -10,8 +10,9 @@
 <script setup>
 import { defineProps } from 'vue';
 
-// Este componente recibirá 4 datos (props) desde el padre (IndexPage.vue)
-const props = defineProps({
+// CORRECCIÓN: Eliminamos 'const props ='
+// El template accede a 'destinatario', 'cargo', etc., directamente.
+defineProps({
   destinatario: String,
   cargo: String,
   empresa: String,
